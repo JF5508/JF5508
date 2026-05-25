@@ -1,18 +1,21 @@
+/* Javier Fillalan 5/24/2026  SDC260 2.9 Project*/
+
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   background: linear-gradient(to right, #dfe9f3, #ffffff);
   color: #333;
+  line-height: 1.6;
 }
 
-header {
+body > header {
   text-align: center;
-  background-color: #2c3e50;
+  background-color: #1f3c88;
   color: white;
-  padding: 30px;
+  padding: 30px 20px;
 }
 
-header h1 {
+body > header h1 {
   font-size: 2.5rem;
   font-weight: bold;
   margin: 0;
@@ -24,41 +27,51 @@ nav ul {
   justify-content: center;
   gap: 20px;
   padding: 0;
-  margin: 0;
-  background-color: #34495e;
-}
-
-nav ul li {
-  padding: 15px 0;
+  margin-top: 20px;
 }
 
 nav ul li a {
   text-decoration: none;
   color: white;
-  padding: 10px 15px;
-  transition: background-color 0.3s, color 0.3s;
+  background-color: #355cbd;
+  padding: 10px 18px;
+  border-radius: 5px;
+  transition: 0.3s ease;
 }
 
 nav ul li a:hover {
   background-color: #1abc9c;
   color: black;
-  border-radius: 5px;
+}
+
+main {
+  padding: 20px;
 }
 
 section {
-  margin: 20px;
+  margin: 20px auto;
   padding: 20px;
   background-color: white;
-  border-left: 5px solid #1abc9c;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-left: 6px solid #1f3c88;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
+  max-width: 900px;
+}
+
+section header h2 {
+  margin-top: 0;
+  color: #1f3c88;
+}
+
+section p {
+  font-size: 1rem;
 }
 
 footer {
   text-align: center;
   font-size: 0.9rem;
-  background-color: #2c3e50;
+  background-color: #1f3c88;
   color: white;
   padding: 15px;
-  margin-top: 20px;
+  margin-top: 30px;
 }
