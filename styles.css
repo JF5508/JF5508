@@ -28,6 +28,7 @@ nav ul {
   gap: 20px;
   padding: 0;
   margin-top: 20px;
+  flex-direction: row;
 }
 
 nav a {
@@ -54,6 +55,9 @@ nav ul li a:hover {
 
 main {
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 section {
@@ -115,4 +119,72 @@ thead {
 tfoot {
   font-weight: bold;
   text-align: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+}
+
+.contact-form input:hover,
+.contact-form textarea:hover {
+  border-color: #0077cc;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #005fa3;
+  outline: none;
+}
+
+.contact-form input[type="submit"] {
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 12px;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form input[type="submit"]:hover {
+  background-color: #005fa3;
+}
+
+.contact-form input[type="submit"]:focus {
+  background-color: #004080;
+}
+
+@media (min-width: 320px) {
+  body {
+    min-width: 320px;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    min-width: 768px;
+  }
+
+  main {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    min-width: 1024px;
+  }
+
+  main {
+    gap: 30px;
+  }
 }
